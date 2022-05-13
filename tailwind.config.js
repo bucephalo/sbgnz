@@ -4,7 +4,8 @@ module.exports = {
     extend: {
       fontFamily:{
         'koulen':['Koulen', 'cursive'],
-        'nunito':['Nunito', 'sans-serif']
+        'nunito':['Nunito', 'sans-serif'],
+        'poppins':['Poppins', 'sans-serif']
       }
     },
   },
