@@ -4,9 +4,15 @@ module.exports = {
     extend: {
       fontFamily:{
         'koulen':['Koulen', 'cursive'],
-        'nunito':['Nunito', 'sans-serif'],
-        'poppins':['Poppins', 'sans-serif'],
-        'robotoMono':['Roboto Mono', 'sans-serif'],
+        // 'custom':['Open Sans', 'sans-serif'],
+        "fragment-glare": "fragment-glare, serif",
+        "fragment-text": "fragment-text, serif",
+        "fragment-sans": "fragment-sans, sans-serif"
+      },
+      colors: {
+        negroColor: 'hsl(0, 0%, 4%)',
+        grisColor: 'hsl(222, 10%, 20%)'
+
       }
     },
   },

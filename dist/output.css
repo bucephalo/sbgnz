@@ -1,8 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Koulen&family=Macondo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Koulen&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200;300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
 
 /*
 ! tailwindcss v3.0.24 | MIT License | https://tailwindcss.com
@@ -429,6 +427,30 @@ Ensure the default browser behavior of the `hidden` attribute.
   display: none;
 }
 
+@font-face {
+  font-family: "fragment-glare";
+
+  font-weight: 300;
+
+  src: url("../src/fonts/PPFragment-GlareLight.otf") format("opentype");
+}
+
+@font-face {
+  font-family: 'fragment-glare';
+
+  font-weight: 400;
+
+  src: url("../src/fonts/PPFragment-GlareRegular.otf") format("opentype");
+}
+
+@font-face {
+  font-family: 'fragment-glare';
+
+  font-weight: 800;
+
+  src: url("../src/fonts/PPFragment-GlareExtraBold.otf") format("opentype");
+}
+
 *, ::before, ::after{
   --tw-translate-x: 0;
   --tw-translate-y: 0;
@@ -591,12 +613,56 @@ Ensure the default browser behavior of the `hidden` attribute.
   top: 0px;
 }
 
+.bottom-5{
+  bottom: 1.25rem;
+}
+
+.right-5{
+  right: 1.25rem;
+}
+
+.top-1{
+  top: 0.25rem;
+}
+
+.top-5{
+  top: 1.25rem;
+}
+
 .isolate{
   isolation: isolate;
 }
 
 .isolation-auto{
   isolation: auto;
+}
+
+.z-20{
+  z-index: 20;
+}
+
+.col-span-2{
+  grid-column: span 2 / span 2;
+}
+
+.col-span-1{
+  grid-column: span 1 / span 1;
+}
+
+.col-span-3{
+  grid-column: span 3 / span 3;
+}
+
+.row-span-3{
+  grid-row: span 3 / span 3;
+}
+
+.row-span-2{
+  grid-row: span 2 / span 2;
+}
+
+.row-span-1{
+  grid-row: span 1 / span 1;
 }
 
 .float-right{
@@ -652,16 +718,28 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-bottom: 1rem;
 }
 
-.mb-6{
-  margin-bottom: 1.5rem;
+.mt-1{
+  margin-top: 0.25rem;
 }
 
-.mt-8{
-  margin-top: 2rem;
+.-mt-2{
+  margin-top: -0.5rem;
+}
+
+.-mt-1{
+  margin-top: -0.25rem;
+}
+
+.mt-0{
+  margin-top: 0px;
 }
 
 .mt-2{
   margin-top: 0.5rem;
+}
+
+.mt-4{
+  margin-top: 1rem;
 }
 
 .box-border{
@@ -760,6 +838,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 3rem;
 }
 
+.h-4{
+  height: 1rem;
+}
+
+.h-14{
+  height: 3.5rem;
+}
+
 .h-\[calc\(100\%-theme\(\'spacing\.1\'\)\)\]{
   height: calc(100% - 0.25rem);
 }
@@ -776,12 +862,44 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 100%;
 }
 
-.w-96{
-  width: 24rem;
+.w-4{
+  width: 1rem;
+}
+
+.w-14{
+  width: 3.5rem;
+}
+
+.w-16{
+  width: 4rem;
+}
+
+.w-10{
+  width: 2.5rem;
+}
+
+.w-6{
+  width: 1.5rem;
+}
+
+.w-5{
+  width: 1.25rem;
+}
+
+.w-8{
+  width: 2rem;
 }
 
 .max-w-xl{
   max-width: 36rem;
+}
+
+.max-w-3xl{
+  max-width: 48rem;
+}
+
+.max-w-md{
+  max-width: 28rem;
 }
 
 .flex-shrink{
@@ -1111,6 +1229,22 @@ Ensure the default browser behavior of the `hidden` attribute.
   grid-auto-flow: column dense;
 }
 
+.grid-cols-3{
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.grid-cols-4{
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.grid-rows-2{
+  grid-template-rows: repeat(2, minmax(0, 1fr));
+}
+
+.grid-rows-3{
+  grid-template-rows: repeat(3, minmax(0, 1fr));
+}
+
 .flex-row{
   flex-direction: row;
 }
@@ -1267,10 +1401,24 @@ Ensure the default browser behavior of the `hidden` attribute.
   justify-items: stretch;
 }
 
-.space-x-2 > :not([hidden]) ~ :not([hidden]){
-  --tw-space-x-reverse: 0;
-  margin-right: calc(0.5rem * var(--tw-space-x-reverse));
-  margin-left: calc(0.5rem * calc(1 - var(--tw-space-x-reverse)));
+.gap-5{
+  gap: 1.25rem;
+}
+
+.gap-3{
+  gap: 0.75rem;
+}
+
+.gap-4{
+  gap: 1rem;
+}
+
+.gap-2{
+  gap: 0.5rem;
+}
+
+.gap-1{
+  gap: 0.25rem;
 }
 
 .space-y-reverse > :not([hidden]) ~ :not([hidden]){
@@ -1547,10 +1695,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-radius: 9999px;
 }
 
-.rounded-md{
-  border-radius: 0.375rem;
-}
-
 .rounded{
   border-radius: 0.25rem;
 }
@@ -1649,14 +1793,9 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-style: none;
 }
 
-.bg-slate-200{
+.bg-zinc-500{
   --tw-bg-opacity: 1;
-  background-color: rgb(226 232 240 / var(--tw-bg-opacity));
-}
-
-.bg-blue-600{
-  --tw-bg-opacity: 1;
-  background-color: rgb(37 99 235 / var(--tw-bg-opacity));
+  background-color: rgb(113 113 122 / var(--tw-bg-opacity));
 }
 
 .bg-\[rgb\(255\2c 0\2c 0\)\]{
@@ -1814,20 +1953,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding: 0.5rem;
 }
 
-.p-4{
-  padding: 1rem;
-}
-
-.px-7{
-  padding-left: 1.75rem;
-  padding-right: 1.75rem;
-}
-
-.py-3{
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
-}
-
 .px-1\.5{
   padding-left: 0.375rem;
   padding-right: 0.375rem;
@@ -1894,16 +2019,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
-.font-nunito{
-  font-family: Nunito, sans-serif;
-}
-
-.font-robotoMono{
-  font-family: Roboto Mono, sans-serif;
-}
-
-.font-poppins{
-  font-family: Poppins, sans-serif;
+.font-fragment-glare{
+  font-family: fragment-glare, serif;
 }
 
 .font-\[\'some_font\'\2c sans-serif\]{
@@ -1929,14 +2046,29 @@ Ensure the default browser behavior of the `hidden` attribute.
   line-height: 1.75rem;
 }
 
-.text-sm{
-  font-size: 0.875rem;
-  line-height: 1.25rem;
+.text-xs{
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
+.text-3xl{
+  font-size: 1.875rem;
+  line-height: 2.25rem;
 }
 
 .text-lg{
   font-size: 1.125rem;
   line-height: 1.75rem;
+}
+
+.text-sm{
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.text-2xl{
+  font-size: 1.5rem;
+  line-height: 2rem;
 }
 
 .font-bold{
@@ -1947,20 +2079,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   font-weight: 500;
 }
 
-.font-semibold{
-  font-weight: 600;
-}
-
-.font-black{
-  font-weight: 900;
-}
-
 .font-extrabold{
   font-weight: 800;
 }
 
-.font-normal{
-  font-weight: 400;
+.font-light{
+  font-weight: 300;
 }
 
 .uppercase{
@@ -2060,29 +2184,9 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: rgb(120 113 108 / var(--tw-text-opacity));
 }
 
-.text-sky-700{
-  --tw-text-opacity: 1;
-  color: rgb(3 105 161 / var(--tw-text-opacity));
-}
-
-.text-sky-900{
-  --tw-text-opacity: 1;
-  color: rgb(12 74 110 / var(--tw-text-opacity));
-}
-
 .text-white{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.text-zinc-400{
-  --tw-text-opacity: 1;
-  color: rgb(161 161 170 / var(--tw-text-opacity));
-}
-
-.text-stone-400{
-  --tw-text-opacity: 1;
-  color: rgb(168 162 158 / var(--tw-text-opacity));
 }
 
 .underline{
@@ -2443,9 +2547,45 @@ Ensure the default browser behavior of the `hidden` attribute.
   content: "hello";
 }
 
-.hover\:bg-blue-700:hover{
+.background-index {
+  /* background-image: linear-gradient(rgba(255, 255, 255, .5), rgb(255, 255, 255, .5)), url('./../src/img/imagen.jpg'); */
+  /* --background-image: url('./../src/img/imagen.jpg'); */
+  /* --bg-image-opacity: .5;     */
+  /* display: grid; */
+  /* place-content: center; */
+  background-color: #0c0f0a;
+  /* background-image: linear-gradient(
+    45deg,
+    hsl(0deg 0% 0%) 0%,
+    hsl(0deg 0% 2%) 11%,
+    hsl(0deg 0% 5%) 22%,
+    hsl(0deg 0% 7%) 33%,
+    hsl(0deg 0% 9%) 44%,
+    hsl(0deg 0% 11%) 56%,
+    hsl(0deg 0% 14%) 67%,
+    hsl(0deg 0% 16%) 78%,
+    hsl(0deg 0% 18%) 89%,
+    hsl(0deg 0% 21%) 100%
+    ); */
+  min-height: 100vh;
+  /* isolation: isolate; */
+}
+
+/* .background-index::after {
+    content: '';
+    inset: 0;
+    position: absolute;
+    background-image: var(--background-image);
+    opacity: var(--bg-image-opacity);
+    z-index: -1;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+} */
+
+.hover\:bg-zinc-700:hover{
   --tw-bg-opacity: 1;
-  background-color: rgb(29 78 216 / var(--tw-bg-opacity));
+  background-color: rgb(63 63 70 / var(--tw-bg-opacity));
 }
 
 .hover\:font-bold:hover{
@@ -2478,9 +2618,9 @@ Ensure the default browser behavior of the `hidden` attribute.
   text-align: center;
 }
 
-.focus\:bg-blue-700:focus{
+.focus\:bg-zinc-700:focus{
   --tw-bg-opacity: 1;
-  background-color: rgb(29 78 216 / var(--tw-bg-opacity));
+  background-color: rgb(63 63 70 / var(--tw-bg-opacity));
 }
 
 .focus\:no-underline:focus{
@@ -2513,9 +2653,9 @@ Ensure the default browser behavior of the `hidden` attribute.
   text-align: center;
 }
 
-.active\:bg-blue-800:active{
+.active\:bg-zinc-900:active{
   --tw-bg-opacity: 1;
-  background-color: rgb(30 64 175 / var(--tw-bg-opacity));
+  background-color: rgb(24 24 27 / var(--tw-bg-opacity));
 }
 
 .active\:shadow-lg:active{
@@ -2574,13 +2714,34 @@ Ensure the default browser behavior of the `hidden` attribute.
     display: block;
   }
 
+  .md\:w-16{
+    width: 4rem;
+  }
+
+  .md\:w-24{
+    width: 6rem;
+  }
+
   .md\:max-w-3xl{
     max-width: 48rem;
+  }
+
+  .md\:flex-row{
+    flex-direction: row;
+  }
+
+  .md\:p-5{
+    padding: 1.25rem;
   }
 
   .md\:text-2xl{
     font-size: 1.5rem;
     line-height: 2rem;
+  }
+
+  .md\:text-xl{
+    font-size: 1.25rem;
+    line-height: 1.75rem;
   }
 }
 
@@ -2591,4 +2752,3 @@ Ensure the default browser behavior of the `hidden` attribute.
     }
   }
 }
-
