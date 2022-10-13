@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Hotjar Tracking Code for my site -->
+  <script>
+    (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:3177466,hjsv:6};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+  </script>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SBGNZ</title>
+  <link rel="stylesheet" href="dist/output.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://unpkg.com/flowbite@1.5.3/dist/flowbite.min.css" />
+
+  <!-- <script src="./main.js"></script> -->
+  <!-- <link rel="shortcut icon" href="myIcon.ico?v=2" type="image/x-icon"> -->
+  <!-- <link rel="icon" href="myIcon.ico?v=2" type="image/x-icon"> -->
+
+  <link rel="shortcut icon" sizes="57x57" href="apple-icon-57x57.png?v=2">
+  <link rel="shortcut icon" sizes="60x60" href="apple-icon-60x60.png?v=2">
+  <link rel="shortcut icon" sizes="72x72" href="apple-icon-72x72.png?v=2">
+  <link rel="shortcut icon" sizes="76x76" href="apple-icon-76x76.png?v=2">
+  <link rel="shortcut icon" sizes="114x114" href="apple-icon-114x114.png?v=2">
+  <link rel="shortcut icon" sizes="120x120" href="apple-icon-120x120.png?v=2">
+  <link rel="shortcut icon" sizes="144x144" href="apple-icon-144x144.png?v=2">
+  <link rel="shortcut icon" sizes="152x152" href="apple-icon-152x152.png?v=2">
+  <link rel="shortcut icon" sizes="180x180" href="apple-icon-180x180.png?v=2">
+  <link rel="shortcut icon" type="image/png" sizes="192x192" href="android-icon-192x192.png?v=2">
+  <link rel="shortcut icon" type="image/png" sizes="32x32" href="favicon-32x32.png?v=2">
+  <link rel="shortcut icon" type="image/png" sizes="96x96" href="favicon-96x96.png?v=2">
+  <link rel="shortcut icon" type="image/png" sizes="16x16" href="favicon-16x16.png?v=2">
+  <link rel="manifest" href="manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+</head>
+
+<body class="antialiased background-index">
+    <!-- Back to top button -->
+    <button
+        type="button"
+        data-mdb-ripple="true"
+        data-mdb-ripple-color="light"
+        class="inline-block 
+        z-20 p-3 
+        bg-zinc-500 
+        text-white 
+        font-medium 
+        text-xs 
+        leading-tight 
+        uppercase 
+        rounded-full 
+        shadow-md 
+        hover:bg-zinc-700 
+        hover:shadow-lg 
+        focus:bg-zinc-700 
+        focus:shadow-lg 
+        focus:outline-none 
+        focus:ring-0 
+        active:bg-zinc-900 
+        active:shadow-lg 
+        transition 
+        duration-150 
+        ease-in-out 
+        hidden 
+        bottom-5 
+        right-5 
+        fixed
+        "
+        id="btn-back-to-top"
+    >
+    <!-- <svg
+        aria-hidden="true"
+        focusable="false"
+        data-prefix="fas"
+        class="w-4 h-4"
+        role="img"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 448 512"
+    >
+        <path
+        fill="currentColor"
+        d="M34.9 289.5l-22.2-22.2c-9.4-9.4-9.4-24.6 0-33.9L207 39c9.4-9.4 24.6-9.4 33.9 0l194.3 194.3c9.4 9.4 9.4 24.6 0 33.9L413 289.4c-9.5 9.5-25 9.3-34.3-.4L264 168.6V456c0 13.3-10.7 24-24 24h-32c-13.3 0-24-10.7-24-24V168.6L69.2 289.1c-9.3 9.8-24.8 10-34.3.4z"
+        ></path>
+    </svg> -->
+    <div class="w-6 h-6 flex justify-center items-center">
+        <span class="text-lg">☝</span>
+    </div>
+    </button>
+
+    <!-- !Header -->
+    <div class="absolute right-5 top-5 pl-5">
+        <!-- Botón Index -->
+        <a class="mr-2" href="./index.html">
+            <span class="
+            font-fragment-glare
+            font-bold
+            text-white
+            text-lg
+            hover:bg-stone-800
+            transition-all 
+            duration-300
+            rounded-lg
+            px-2
+            py-2
+            ">
+            Inicio
+            </span>
+        </a>
+        <!-- Botón Portafolio -->
+        <a class="mr-2" href="./portafolio.html">
+            <span class="
+            font-fragment-glare
+            font-bold
+            text-white
+            text-lg
+            hover:bg-stone-800
+            transition-all 
+            duration-300
+            rounded-lg
+            px-2
+            py-2
+            ">
+            Portafolio
+            </span>
+        </a>
+        <!-- Botón Contacto -->
+        <a class="mr-2" href="./contacto.html">
+            <span class="
+            font-fragment-glare
+            font-bold
+            text-white
+            text-lg
+            hover:bg-stone-800
+            transition-all 
+            duration-300
+            rounded-lg
+            px-2
+            py-2
+            ">
+            Contacto
+            </span>
+        </a>
+    </div>
+
+    <div class="container mt-24 mx-auto p-1 md:p-5">
+        <!-- ?Título -->
+        <div class="mx-auto max-w-xl px-6">
+            <span class="
+                font-fragment-glare
+                text-2xl 
+                md:text-4xl
+                text-white
+                font-bold
+                ">
+                Proyectos
+            </span>
+        </div>
+
+        <!-- ?Proyecto 1 -->
+        <div class="mx-auto max-w-xl px-6 mt-12">
+            <div class="flex flex-col">
+                <span class="text-xl text-white font-fragment-glare font-bold">
+                    Maqueta aplicación móvil
+                </span>
+                <span
+                class="
+                text-white 
+                text-md 
+                md:text-xl 
+                font-fragment-glare
+                text-justify
+                pt-1
+                ">
+                    Maqueta de app móvil construida en Figma. 
+                    Te informa acerca de descuentos en las plataformas en las que estás suscrito como cliente.
+                    <br>
+                    Actualmente estoy construyendo el prototipo en Vue + Tailwindcss.
+                </span>
+            </div>
+
+            <div class="hidden sm:flex flex-row gap-8 mx-auto justify-center mt-8">
+                <img class="w-24 md:w-36" src="src/img/port_1.png" alt="">
+                <img class="w-24 md:w-36" src="src/img/port_2.png" alt="">
+                <img class="w-24 md:w-36" src="src/img/port_3.png" alt="">
+            </div>
+
+            <!-- ~Carrousel en mobile -->
+            <div class="block sm:hidden mt-10">
+                <div id="controls-carousel" class="relative" data-carousel="static">
+                    <div class="relative overflow-hidden rounded-lg" style="height: 610px;">
+                        <div class="duration-700 ease-in-out absolute inset-0 transition-all transform -translate-x-full z-10" data-carousel-item="">
+                            <img src="./src/img/port_1.png" class="absolute block w-60 -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                        </div>
+                        <div class="duration-700 ease-in-out absolute inset-0 transition-all transform translate-x-0 z-20" data-carousel-item="active">
+                            <img src="./src/img/port_2.png" class="absolute block w-60 -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                        </div>
+                        <div class="duration-700 ease-in-out absolute inset-0 transition-all transform translate-x-full z-10" data-carousel-item="">
+                            <img src="./src/img/port_3.png" class="absolute block w-60 -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                        </div>
+                    </div>
+                    <button type="button" class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev="">
+                        <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                            <svg aria-hidden="true" class="w-6 h-6 text-white dark:text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+                            <span class="sr-only">Previous</span>
+                        </span>
+                    </button>
+                    <button type="button" class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next="">
+                        <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                            <svg aria-hidden="true" class="w-6 h-6 text-white dark:text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                            <span class="sr-only">Next</span>
+                        </span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="mt-8 hidden md:block">
+                <img class="max-w-xs md:max-w-lg rounded-xl mx-auto" src="src/img/fig_1.png" alt="">
+            </div>
+
+            <div class="mt-8 hidden md:block">
+                <img class="max-w-xs md:max-w-lg rounded-xl mx-auto" src="src/img/design-system-1.png" alt="">
+            </div>
+        </div>
+
+        <!-- ?Proyecto 2 -->
+        <div class="mx-auto max-w-xl px-6 mt-12">
+            <div class="flex flex-col">
+                <span class="text-xl text-white font-fragment-glare font-bold">
+                    Aplicación móvil (Angular + Ionic)
+                </span>
+                <span
+                class="
+                text-white 
+                text-md 
+                md:text-xl 
+                font-fragment-glare
+                text-justify
+                pt-1
+                ">
+                    App móvil para apoderados (en desarrollo)
+                    <br>
+                    Aplicación para apoderados con hijos escolares. La app informa sobre diferentes asuntos 
+                    relacionados con el colegio y las clases (notas, asistencia, promedios, alertas, etc.)
+                    <br>
+                    En la web app (también en desarrollo), los profesores o encargados ingresan la 
+                    información que se desplegará en la aplicación móvil.
+                    <br>
+                    Utilizamos Angular + Ionic + Scss.
+                </span>
+            </div>
+            <div class="mt-8">
+                <div class="grid grid-cols-2 gap-4">
+                    <img src="src/img/portafolio-1/portafolio-img_1.png" alt="">
+                    <img src="src/img/portafolio-1/portafolio-img_2.png" alt="">
+                    <img src="src/img/portafolio-1/portafolio-img_3.png" alt="">
+                    <img src="src/img/portafolio-1/portafolio-img_4.png" alt="">
+                    <img src="src/img/portafolio-1/portafolio-img_5.png" alt="">
+                </div>
+            </div>
+        </div>
+
+        <!-- ?Proyecto 3 -->
+        <div class="mx-auto max-w-xl px-6 mt-12">
+            <div class="flex flex-col">
+                <span class="text-xl text-white font-fragment-glare font-bold">
+                    Aplicación web (Angular + Bootstrap)
+                </span>
+                <span
+                class="
+                text-white 
+                text-md 
+                md:text-xl 
+                font-fragment-glare
+                text-justify
+                pt-1
+                ">
+                    App web para profesores (en desarrollo)
+                    <br> 
+                    Sistema web para profesores y/o encargados de ingresar la información que se desplegará
+                    en la aplicación móvil; y también para uso personal. Permite "cargar" alumnos desde
+                    archivos excel, crear asignaturas, planes de estudio, ingresar notas, entre otros.
+                    <br>
+                    Utilizamos Angular + Bootstrap.
+                </span>
+            </div>
+            <!-- <div class="mt-8">
+                <div class="grid grid-cols-2 gap-4">
+                    <img src="src/img/portafolio-1/portafolio-img_6.png" alt="">
+                    <img src="src/img/portafolio-1/portafolio-img_7.png" alt="">
+                </div>
+            </div> -->
+
+            <!-- ~Carrousel en mobile -->
+            <div class="block mt-10">
+                <div id="controls-carousel" class="relative" data-carousel="static">
+                    <div class="relative overflow-hidden rounded-lg" style="height: 310px;">
+                        <div class="duration-700 ease-in-out absolute inset-0 transition-all transform translate-x-0 z-20" data-carousel-item="active">
+                            <img src="src/img/portafolio-1/portafolio-img_6.png" class="rounded-lg absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                        </div>
+                        <div class="duration-700 ease-in-out absolute inset-0 transition-all transform translate-x-full z-10" data-carousel-item="">
+                            <img src="src/img/portafolio-1/portafolio-img_7.png" class="rounded-lg absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                        </div>
+                    </div>
+                    <button type="button" class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev="">
+                        <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                            <svg aria-hidden="true" class="w-6 h-6 text-white dark:text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+                            <span class="sr-only">Previous</span>
+                        </span>
+                    </button>
+                    <button type="button" class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next="">
+                        <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                            <svg aria-hidden="true" class="w-6 h-6 text-white dark:text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                            <span class="sr-only">Next</span>
+                        </span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- ?Proyecto 4 -->
+        <div class="mx-auto max-w-xl px-6 mt-12">
+            <div class="flex flex-col">
+                <span class="text-xl text-white font-fragment-glare font-bold">
+                    Sistema web/móvil (Vue + Tailwindcss)
+                </span>
+                <span
+                class="
+                text-white 
+                text-md 
+                md:text-xl 
+                font-fragment-glare
+                text-justify
+                pt-1
+                ">
+                    Agenda web responsiva (en desarrollo)
+                    <br>
+                    Los pacientes de Red Interclínicas podrán agendar horas con los profesionales 
+                    a través de la web o sus teléfonos.
+                </span>
+            </div>
+            <div class="mt-8">
+                <div class="grid grid-cols-2 gap-4">
+                    <img src="src/img/portafolio-1/portafolio-img_8.png" alt="">
+                    <img src="src/img/portafolio-1/portafolio-img_9.png" alt="">
+                    <img src="src/img/portafolio-1/portafolio-img_10.png" alt="">
+                    <img src="src/img/portafolio-1/portafolio-img_11.png" alt="">
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script type="text/javascript">
+        // Get the button
+        let mybutton = document.getElementById('btn-back-to-top');
+    
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () {
+          scrollFunction();
+        };
+    
+        function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = 'block';
+          } else {
+            mybutton.style.display = 'none';
+          }
+        }
+        // When the user clicks on the button, scroll to the top of the document
+        mybutton.addEventListener('click', backToTop);
+    
+        function backToTop() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+        }
+    </script>
+
+    <script src="./node_modules/flowbite/dist/flowbite.js"></script>
+    
+</body>
+</html>
