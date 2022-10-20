@@ -1276,6 +1276,10 @@ input:checked + .toggle-bg{
   margin-bottom: 0.25rem;
 }
 
+.mt-4{
+  margin-top: 1rem;
+}
+
 .box-border{
   box-sizing: border-box;
 }
@@ -1474,6 +1478,18 @@ input:checked + .toggle-bg{
 
 .w-1\/2{
   width: 50%;
+}
+
+.w-16{
+  width: 4rem;
+}
+
+.w-36{
+  width: 9rem;
+}
+
+.w-48{
+  width: 12rem;
 }
 
 .max-w-3xl{
@@ -2062,6 +2078,10 @@ input:checked + .toggle-bg{
 
 .gap-4{
   gap: 1rem;
+}
+
+.gap-2{
+  gap: 0.5rem;
 }
 
 .space-x-2 > :not([hidden]) ~ :not([hidden]){
