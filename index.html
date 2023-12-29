@@ -46,39 +46,72 @@
 
 <body class="p-3 bg-slate-100 h-100 flex justify-center">
 
-<div class="max-w-xl w-full bg-slate-300 border-r-6">
+
+
+<div class="max-w-xl w-full bg-slate-300 rounded-md">
   <div class="flex justify-center flex-col gap-5 p-4
   ">
 
-    <div class="relative w-100 flex justify-center">
+    <div class="relative w-100 flex justify-center mb-5">
       <img class="w-36" src="./src/img/amicar/ami-logo.svg" alt="">
     </div>
 
-    <div class="relative mb-3">
-      <input
-        type="text"
-        class="border-r-3 border-3 w-full"
-        id=""
-        placeholder="Pie" />
+    <div class="">
 
+      <p class="text-2xl font-bold">Simula tu crédito</p>
+
+    </div>
+
+    <div class="bg-slate-100 p-5 rounded-lg">
+      <div class="flex">
+
+        <div class="flex flex-col flex-auto gap-2">
+          <span class="font-bold text-xl" >Toyota Yaris</span>
+          <span for="">2010 • Usado</span>
+          <div class="my-2">
+            <span class="font-semibold text-lg bg-green-300 p-2 rounded-lg">$10.000.000</span>
+          </div>
+          <a href="" class="underline">Más detalles</a>
+        </div>
+
+        <div class="">
+          <img class="w-36 h-auto" src="/src/img/toyo.png" alt="">
+        </div>
+      </div>
     </div>
 
     <div class="relative mb-3">
       <input
-        type="text"
-        class="border-r-3 border-3 w-full"
-        id=""
-        placeholder="Número de cuotas" />
-
+        type="email"
+        class="bg-white peer m-0 block h-[58px] w-full rounded border border-solid border-neutral-300 bg-transparent bg-clip-padding px-3 py-4 text-base font-normal leading-tight text-neutral-700 transition duration-200 ease-linear placeholder:text-transparent focus:border-primary focus:pb-[0.625rem] focus:pt-[1.625rem] focus:text-neutral-700 focus:outline-none peer-focus:text-primary dark:border-neutral-600 dark:text-neutral-200 dark:focus:border-primary dark:peer-focus:text-primary [&:not(:placeholder-shown)]:pb-[0.625rem] [&:not(:placeholder-shown)]:pt-[1.625rem]"
+        id="floatingInput"
+        placeholder="name@example.com" />
+      <label
+        for="floatingInput"
+        class="pointer-events-none absolute left-0 top-0 origin-[0_0] border border-solid border-transparent px-3 py-4 text-neutral-500 transition-[opacity,_transform] duration-200 ease-linear peer-focus:-translate-y-2 peer-focus:translate-x-[0.15rem] peer-focus:scale-[0.85] peer-focus:text-primary peer-[:not(:placeholder-shown)]:-translate-y-2 peer-[:not(:placeholder-shown)]:translate-x-[0.15rem] peer-[:not(:placeholder-shown)]:scale-[0.85] motion-reduce:transition-none dark:text-neutral-800 dark:peer-focus:text-primary"
+        >Doy un pie de</label
+      >
     </div>
 
     <!-- TW Elements is free under AGPL, with commercial license required for specific uses. See more details: https://tw-elements.com/license/ and contact us for queries at tailwind@mdbootstrap.com --> 
+    <div class="mb-3 bg-white">
+      <select data-te-select-init data-te-select-size="lg">
+        <option value="1">12</option>
+        <option value="2">24</option>
+        <option value="3">36</option>
+        <option value="4">48</option>
+        <option value="5">60</option>
+      </select>
+      <label data-te-select-label-ref>Cuotas</label>
+
+    </div>
+
     <button
-    type="button"
-    data-te-ripple-init
+      type="button"
+      data-te-ripple-init
     data-te-ripple-color="light"
-    class="inline-block rounded bg-slate-700 px-6 pb-2 pt-2 text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-slate-700 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)]">
-    Simular
+      class="inline-block rounded bg-slate-700 px-7 pb-2.5 pt-3 text-sm font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-slate-800 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)]">
+      Simular
     </button>
 
   </div>
