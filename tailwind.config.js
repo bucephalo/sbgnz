@@ -3,11 +3,12 @@ module.exports = {
   theme: {
     extend: {
       fontFamily:{
-        'koulen':['Koulen', 'cursive'],
+        sans: ['Manrope', 'sans-serif'],
+        'koulen':['Manrope', 'sans-serif'],
         // 'custom':['Open Sans', 'sans-serif'],
-        "fragment-glare": "fragment-glare, sans-serif",
-        "fragment-text": "fragment-text, sans-serif",
-        "fragment-sans": "fragment-sans, sans-serif"
+        "fragment-glare": ["Manrope", "sans-serif"],
+        "fragment-text": ["Manrope", "sans-serif"],
+        "fragment-sans": ["Manrope", "sans-serif"]
       },
       colors: {
         negroColor: 'hsl(0, 0%, 4%)',
